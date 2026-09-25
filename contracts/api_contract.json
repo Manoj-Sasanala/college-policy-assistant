@@ -1,0 +1,19 @@
+{
+  "request": {"question": "My attendance is 70%. Can I write the semester examination?"},
+  "grounded_response": {
+    "status": "grounded",
+    "answer": "The policy states that 75% attendance is required for semester examination eligibility.",
+    "sources": [{
+      "chunk_id": "attendance-policy-exam-eligibility-001",
+      "document_id": "attendance-policy",
+      "document_title": "Attendance Policy",
+      "section": "Examination Eligibility",
+      "page": 1
+    }]
+  },
+  "insufficient_response": {
+    "status": "insufficient_evidence",
+    "answer": "The provided policy documents do not specify the maximum number of condonation applications.",
+    "sources": []
+  }
+}

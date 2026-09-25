@@ -1,0 +1,7 @@
+{
+  "query": "What is the maximum number of condonation applications a student can submit?",
+  "top_k": 3,
+  "relevance_threshold": 0.70,
+  "results": [],
+  "retrieval_status": "no_relevant_results"
+}

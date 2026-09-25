@@ -1,0 +1,11 @@
+{
+    "fixture_id": "attendance-70-supported",
+    "question": "My attendance is 70%. Can I write the semester examination?",
+    "expected_status": "grounded",
+    "expected_source_document_id": "attendance-policy",
+    "expected_policy_facts": [
+        "75% attendance is required for semester examination eligibility",
+        "65-74% may apply for condonation subject to approval"
+    ],
+    "human_verification_required": true
+}
