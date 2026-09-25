@@ -1,0 +1,6 @@
+{
+  "status": "service_error",
+  "error_code": "RETRIEVAL_UNAVAILABLE",
+  "message": "The policy search service is temporarily unavailable.",
+  "retryable": true
+}
