@@ -1,0 +1,129 @@
+:root {
+  --bg: #f6f7fb;
+  --fg: #1f2430;
+  --muted: #5a6270;
+  --accent: #3450c7;
+  --accent-fg: #ffffff;
+  --panel-bg: #ffffff;
+  --panel-border: #dfe3ec;
+  --error-bg: #fdecec;
+  --error-border: #f2b8b8;
+  --error-fg: #8a1f1f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 640px;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  font: inherit;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--accent-fg);
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.status {
+  padding: 0.6rem 0.75rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.panel-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.panel p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+#sources-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#sources-list li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.panel-error {
+  background: var(--error-bg);
+  border-color: var(--error-border);
+  color: var(--error-fg);
+}
+
+.error-retry {
+  margin-top: 0.5rem !important;
+  font-size: 0.9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

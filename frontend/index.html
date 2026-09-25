@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Policy Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>College Policy Assistant</h1>
+    <p class="subtitle">Ask a question about college policy. Answers come only from approved policy documents.</p>
+
+    <form id="ask-form" autocomplete="off">
+      <label for="question-input" class="sr-only">Your question</label>
+      <textarea
+        id="question-input"
+        name="question"
+        rows="3"
+        placeholder="e.g. My attendance is 70%. Can I write the semester examination?"
+        required
+      ></textarea>
+      <button id="ask-button" type="submit">Ask</button>
+    </form>
+
+    <section id="status" class="status" hidden></section>
+
+    <section id="answer-panel" class="panel" hidden>
+      <h2 class="panel-title">Answer</h2>
+      <p id="answer-text"></p>
+    </section>
+
+    <section id="sources-panel" class="panel" hidden>
+      <h2 class="panel-title">Sources</h2>
+      <ul id="sources-list"></ul>
+    </section>
+
+    <section id="error-panel" class="panel panel-error" hidden>
+      <h2 class="panel-title">Something went wrong</h2>
+      <p id="error-message"></p>
+      <p id="error-retry" class="error-retry" hidden></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
