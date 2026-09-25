@@ -1,0 +1,8 @@
+{
+    "fixture_id": "condonation-count-unsupported",
+    "question": "What is the maximum number of condonation applications a student can submit?",
+    "expected_status": "insufficient_evidence",
+    "expected_source_document_id": null,
+    "expected_policy_facts": [],
+    "human_verification_required": true
+}
