@@ -1,0 +1,21 @@
+{
+    "corpus_version": "2026",
+    "approved": false,
+    "approved_by": null,
+    "documents": [
+        {
+            "document_id": "attendance-policy",
+            "document_title": "Attendance Policy",
+            "source_file": "data/policies/attendance-policy.txt",
+            "version": "2026",
+            "effective_date": "2026-01-01",
+            "source": "approved-source-reference",
+            "sections": [
+                {
+                    "section": "Examination Eligibility",
+                    "page": 1
+                }
+            ]
+        }
+    ]
+}
